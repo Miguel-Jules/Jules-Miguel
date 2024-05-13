@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+header {
+  background-color: #FF9100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+header h1 {
+  color: #EFEFEF;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #EFEFEF;
+}
+
+.hero {
+  height: 100vh;
+  background: url(images/background.jpeg) no-repeat;
+  background-size: 100% 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .blur {
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(1.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.hero .container {
+  background: rgba(0,0,0,0.6);
+  padding: 50px;
+}
+
+.hero h1 {
+  color: #FFFFFF;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #EFEFEF;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #FFC400;
+  border-radius: 5px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.features, .blog {
+  min-height: 100vh;
+  background-color: #eaeaea;
+  padding: 50px;
+  text-align: center;
+}
+
+.features .container, .blog .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.feature, .post {
+  width: 400px;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.12), -5px -5px 10px rgba(255, 255, 255, 0.8);
+  transition: transform .5s ease-in-out;
+  padding: 30px;
+}
+
+.post {
+  height: 690px;
+}
+
+.feature:hover, .post:hover {
+  transform: scale(0.9);
+}
+
+.features img, .post img {
+  height:300px;
+  width: 350px;
+}
+
+.feature {
+  margin-bottom: 40px;
+}
+
+.features h1, .blog h1 {
+  margin-bottom: 20px;
+} 
